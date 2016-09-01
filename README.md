@@ -22,7 +22,7 @@ dependency manager.
 2.  Install the coding standard as a dependency of your project
 
 ```bash
-composer require --dev rafaelgou/php-apache2-basic-auth
+composer require rafaelgou/php-apache2-basic-auth
 ```
 
 ## Using
