@@ -8,6 +8,11 @@ Original HtPasswd and HtGroup classes from
 If you want a running app using this lib, see
 [PHP Apache2 Basic Auth Manager](https://github.com/rafaelgou/php-apache2-basic-auth-manager)
 
+## Full API
+
+See [API](docs/README.md)
+
+
 ## Installation
 
 This standard can be installed with the [Composer](https://getcomposer.org/)
@@ -191,7 +196,3 @@ foreach ($groups as $groupname => $group) {
 }
 
 ```
-
- ## Full API
-
-See [API](docs/README.md)
