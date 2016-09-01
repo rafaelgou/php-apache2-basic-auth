@@ -1,0 +1,28 @@
+{
+    "name": "rafaelgou/php-apache2-basic-auth",
+    "description": "PHP Apache2 Basic Auth",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Goulart",
+            "email": "rafaelgou@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "": "src/",
+        "Apache2BasicAuth\\": "Apache2BasicAuth/"
+      }
+    },
+    "require": { },
+    "require-dev": {
+        "escapestudios/symfony2-coding-standard": "^2.9"
+    },
+    "scripts": {
+        "phpcs": [
+          "./vendor/bin/phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard",
+          "./vendor/bin/phpcs --standard=Symfony2 src"
+        ]
+    }
+}
