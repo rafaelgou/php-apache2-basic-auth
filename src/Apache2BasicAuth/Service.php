@@ -308,7 +308,7 @@ class Service
      */
     public function persistUser(User $user)
     {
-        $old = clone $this->findUser($user->getUsername());
+        $old = $this->findUser($user->getUsername());
 
         if (null !== $old) {
             foreach ($old->getGroups() as $groupname) {
