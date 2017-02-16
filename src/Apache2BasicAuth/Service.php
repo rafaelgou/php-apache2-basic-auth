@@ -81,6 +81,7 @@ class Service
                 $users     = count($tmpArray) === 2
                     ? explode(' ', trim($tmpArray[1]))
                     : array();
+                $users = array_filter($users);
             }
             $this->groups[$groupname] = (new Group($groupname, $users));
         }
