@@ -191,6 +191,6 @@ class User
      */
     public function formatHT()
     {
-        return "{$this->getUsername()}: {$this->getHash()}";
+        return "{$this->getUsername()}:{$this->getHash()}";
     }
 }

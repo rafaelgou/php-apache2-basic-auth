@@ -81,6 +81,7 @@ class Service
                 $users     = count($tmpArray) === 2
                     ? explode(' ', trim($tmpArray[1]))
                     : array();
+                $users = array_filter($users);
             }
             $this->groups[$groupname] = (new Group($groupname, $users));
         }
@@ -308,7 +309,7 @@ class Service
      */
     public function persistUser(User $user)
     {
-        $old = clone $this->findUser($user->getUsername());
+        $old = $this->findUser($user->getUsername());
 
         if (null !== $old) {
             foreach ($old->getGroups() as $groupname) {
