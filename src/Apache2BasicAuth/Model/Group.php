@@ -127,7 +127,6 @@ class Group
     {
         $users = $this->getUsers();
         sort($users);
-        print_r($users);
         $users = implode(' ', $users);
 
         return "{$this->getName()}: {$users}";
